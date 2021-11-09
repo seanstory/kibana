@@ -61,7 +61,7 @@ import {
   SHAREPOINT_DOCS_URL,
   SLACK_DOCS_URL,
   ZENDESK_DOCS_URL,
-  CUSTOM_SOURCE_DOCS_URL,
+  CUSTOM_SOURCE_DOCS_URL, ADD_EXTERNAL_PATH, EDIT_EXTERNAL_PATH,
 } from '../../routes';
 import { FeatureIds, SourceDataItem } from '../../types';
 
@@ -613,6 +613,24 @@ export const staticSourceData = [
       helpText: i18n.translate('xpack.enterpriseSearch.workplaceSearch.sources.helpText.custom', {
         defaultMessage:
           'To create a Custom API Source, provide a human-readable and descriptive name. The name will appear as-is in the various search experiences and management interfaces.',
+      }),
+      documentationUrl: CUSTOM_SOURCE_DOCS_URL,
+      applicationPortalUrl: '',
+    },
+    accountContextOnly: false,
+  },
+  {
+    name: SOURCE_NAMES.EXTERNAL,
+    serviceType: 'external',
+    addPath: ADD_EXTERNAL_PATH,
+    editPath: EDIT_EXTERNAL_PATH,
+    configuration: {
+      isPublicKey: false,
+      hasOautRedirect: false,
+      needsBaseUrl: true,
+      helpText: i18n.translate('xpack.enterpriseSearch.workplaceSearch.sources.helpText.external', {
+        defaultMessage:
+          'To create an External Source, provide a human-readable and descriptive name. The name will appear as-is in the various search experiences and management interfaces.',
       }),
       documentationUrl: CUSTOM_SOURCE_DOCS_URL,
       applicationPortalUrl: '',

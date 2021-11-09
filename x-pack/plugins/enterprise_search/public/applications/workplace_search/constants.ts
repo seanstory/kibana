@@ -198,6 +198,9 @@ export const SOURCE_NAMES = {
   CUSTOM: i18n.translate('xpack.enterpriseSearch.workplaceSearch.sources.sourceNames.custom', {
     defaultMessage: 'Custom API Source',
   }),
+  EXTERNAL: i18n.translate('xpack.enterpriseSearch.workplaceSearch.sources.sourceNames.external', {
+    defaultMessage: 'External Source',
+  }),
 };
 
 export const SOURCE_OBJ_TYPES = {

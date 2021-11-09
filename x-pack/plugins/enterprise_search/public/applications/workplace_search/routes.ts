@@ -85,6 +85,7 @@ export const ADD_SHAREPOINT_PATH = `${SOURCES_PATH}/add/share_point`;
 export const ADD_SLACK_PATH = `${SOURCES_PATH}/add/slack`;
 export const ADD_ZENDESK_PATH = `${SOURCES_PATH}/add/zendesk`;
 export const ADD_CUSTOM_PATH = `${SOURCES_PATH}/add/custom`;
+export const ADD_EXTERNAL_PATH = `${SOURCES_PATH}/add/external`;
 
 export const PERSONAL_SETTINGS_PATH = `${PERSONAL_PATH}/settings`;
 
@@ -125,6 +126,7 @@ export const EDIT_SHAREPOINT_PATH = `${ORG_SETTINGS_CONNECTORS_PATH}/share_point
 export const EDIT_SLACK_PATH = `${ORG_SETTINGS_CONNECTORS_PATH}/slack/edit`;
 export const EDIT_ZENDESK_PATH = `${ORG_SETTINGS_CONNECTORS_PATH}/zendesk/edit`;
 export const EDIT_CUSTOM_PATH = `${ORG_SETTINGS_CONNECTORS_PATH}/custom/edit`;
+export const EDIT_EXTERNAL_PATH = `${ORG_SETTINGS_CONNECTORS_PATH}/external/edit`;
 
 export const getContentSourcePath = (
   path: string,
